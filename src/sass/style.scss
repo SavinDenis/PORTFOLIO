@@ -2,6 +2,7 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/divider';
 
 *{
     box-sizing: border-box;
@@ -12,6 +13,7 @@
 
 a {
     text-decoration: none;
+   
 }
 
 
@@ -23,3 +25,7 @@ a {
 @import 'blocks/buttons';
 @import 'blocks/title';
 @import 'blocks/promo';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/experience';

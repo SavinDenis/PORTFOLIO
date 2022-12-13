@@ -5,7 +5,11 @@
     padding-top: 206px;
 
     &__subtitle {
+        position: relative;
         font-size: 16px;
+        @include before_circle;
+        z-index: 2;
+        padding-left: 12px;
     }
 
     &__title {
@@ -19,9 +23,6 @@
         display: flex;
         justify-content: space-between;
         max-width: 250px;
-        &:nth-child(2) {
-            background: #000;
-        }
     }
 
     &__link {

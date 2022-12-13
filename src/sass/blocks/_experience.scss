@@ -1,0 +1,109 @@
+.experience {
+    padding-bottom: 120px;
+    
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include before_circle_experience;
+    }
+
+    &__title {
+        text-align: center;
+    
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 65px;
+
+
+    }
+
+
+
+    &__education {
+        max-width: 425px;
+        padding-left: 50px;
+        &-title {
+            position: relative;
+            &:before{
+                position: absolute;
+                content: '';
+                height: 15px;
+                width: 15px;
+                background-color: $main-color;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 100%;
+                left: -50px;
+
+            }
+            
+        }
+        &-item {
+            position: relative;
+            max-width: 375px;
+            &::before {
+                position: absolute;
+                content: '';
+                height: calc(100% + 47px);
+                width: 1px;
+                background-color: #000;
+                left: -43px;
+                top: -52px;
+            }
+           
+        }
+        &-header {
+            position: relative;
+            display: flex;
+            margin-top: 45px;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 43px;
+                height: 1px;
+                background-color: #000;
+                top: 20px;
+                left: -43px;
+               
+            }
+
+
+        }
+
+        &-icon {
+            position: relative;
+            @include before_circle;
+            z-index: 2;
+            padding-left: 55px;
+
+            .icon {
+                position: absolute;
+                top: 16px;
+                left: 16px;
+            }
+        }
+
+        &-descr {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-text {
+            margin-top: 12px;
+        }
+
+
+
+
+    }
+}
+
+
+
+.divider {
+    margin: 0 auto;
+}
