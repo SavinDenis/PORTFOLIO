@@ -16,6 +16,11 @@ a {
    
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
 
 .container {
     width: 1140px;
@@ -29,3 +34,4 @@ a {
 @import 'blocks/menu';
 @import 'blocks/about';
 @import 'blocks/experience';
+@import 'blocks/skills';
