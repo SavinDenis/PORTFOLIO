@@ -1,0 +1,181 @@
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .sidepanel {
+        display: none;
+    }
+
+    .about {
+        &__content {
+            width: 100%;
+            margin-left: 30px;
+        }
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .experience {
+        &__wrapper {
+            padding: 0 10px;
+        }
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+
+    .experience {
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__education {
+            padding-left: 0;
+            margin-bottom: 30px;
+            &-item{
+                max-width: 350px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .promo {
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__content {
+            margin-top: 40px;
+            margin-left: 0;
+        }
+
+        &__title {
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+    }
+
+    .experience {
+        &__wrapper {
+            padding: 0;
+            justify-content: end;
+        }
+        
+        &__education {
+           
+            &-item{
+                max-width: 250px;
+            }
+            &-text {
+                font-size: 12px;
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .promo {
+        background: url('../img/main_bg.jpg') 55%/cover no-repeat;
+
+        &__title {
+            font-size: 26px;
+            line-height: 39px;
+        }
+
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+
+    .hamburger {
+        right: 20px;
+        top: 20px;
+    }
+
+    .menu__block {
+        width: 250px;
+        padding-left: 20px;
+
+    }
+
+    .about {
+        margin-top: 40px;
+        padding: 0;
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__img {
+
+            img {
+                height: 400px;
+                width: 300px;
+                object-fit: cover;
+            }
+
+        }
+    }
+
+}
